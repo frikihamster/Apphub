@@ -1,0 +1,12 @@
+Name:  Default
+DataProvider: SqlServer
+DataConnectionString: Data Source=.\SQLExpress;Initial Catalog=Orchard;Integrated Security=True
+DataPrefix:  null
+RequestUrlHost:  null
+RequestUrlPrefix:  null
+State:  Running
+EncryptionAlgorithm:  AES
+EncryptionKey:  FCA251D385EC519561D460291E33730750A465E09C338F4F57ABCD73760ACAE8
+HashAlgorithm:  HMACSHA256
+HashKey:  BA9BC4D0A1EA5A37E7E015DFF8B4684BE7DE1DBA2EF9538FC6C511D27CA3EA9935CC21B01F1F470DFBEBAC8E6473D22C505248F8BC881E975BD4FD42BD9E54F0
+Themes:  

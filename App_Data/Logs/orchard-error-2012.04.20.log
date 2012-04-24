@@ -1,0 +1,65 @@
+2012-04-20 16:20:22,560 [43] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+System.Data.SqlServerCe.SqlCeException (0x80004005): The database file cannot be found. Check the path to the database. [ Data Source = C:\Users\gavric_d\Documents\My Web Sites\apartmaji_gavric\App_Data\Sites\Default\Orchard.sdf ]
+   at System.Data.SqlServerCe.SqlCeConnection.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   at NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   at NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\SessionFactoryHolder.cs:line 83
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\SessionFactoryHolder.cs:line 61
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Users\sebros\My Projects\Orchard\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Users\sebros\My Projects\Orchard\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Users\sebros\My Projects\Orchard\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2012-04-20 16:20:22,878 [43] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+System.Data.SqlServerCe.SqlCeException (0x80004005): The database file cannot be found. Check the path to the database. [ Data Source = C:\Users\gavric_d\Documents\My Web Sites\apartmaji_gavric\App_Data\Sites\Default\Orchard.sdf ]
+   at System.Data.SqlServerCe.SqlCeConnection.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   at NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   at NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\SessionFactoryHolder.cs:line 83
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\SessionFactoryHolder.cs:line 61
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expression`1 predicate) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\Repository.cs:line 126
+   at Orchard.Data.Repository`1.Get(Expression`1 predicate) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\Repository.cs:line 91
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\Repository.cs:line 60
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() in c:\Users\sebros\My Projects\Orchard\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 57
+   at Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() in c:\Users\sebros\My Projects\Orchard\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:line 30
+   at Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:line 66
+   at Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Environment\DefaultOrchardHost.cs:line 174
+   at Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() in c:\Users\sebros\My Projects\Orchard\src\Orchard\Environment\DefaultOrchardHost.cs:line 134
+2012-04-20 16:20:23,075 [8] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+System.Data.SqlServerCe.SqlCeException (0x80004005): The database file cannot be found. Check the path to the database. [ Data Source = C:\Users\gavric_d\Documents\My Web Sites\apartmaji_gavric\App_Data\Sites\Default\Orchard.sdf ]
+   at System.Data.SqlServerCe.SqlCeConnection.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   at NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   at NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at Orchard.Data.SessionFactoryHolder.BuildSessionFactory() in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\SessionFactoryHolder.cs:line 83
+   at Orchard.Data.SessionFactoryHolder.GetSessionFactory() in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\SessionFactoryHolder.cs:line 61
+   at Orchard.Data.SessionLocator.For(Type entityType) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\SessionLocator.cs:line 29
+   at Orchard.Data.Repository`1.get_Session() in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\Repository.cs:line 26
+   at Orchard.Data.Repository`1.get_Table() in c:\Users\sebros\My Projects\Orchard\src\Orchard\Data\Repository.cs:line 30
+   at Orchard.Data.Repository`1.Fetch(Expres

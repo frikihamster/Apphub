@@ -1,0 +1,33 @@
+2012-04-19 17:11:26,589 [13] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT this_.Id as Id11_0_, this_.SerialNumber as SerialNu2_11_0_ FROM Settings_ShellDescriptorRecord this_ WHERE 1=1
+System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-04-19 17:11:26,712 [13] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-04-19 17:11:26,718 [13] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-04-19 17:13:57,234 [17] Orchard.Recipes.Services.RecipeStepExecutor - Recipe execution d7823ab7fda64c9bb2be0c1e4fe9d245 was cancelled because a step failed to execute
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Orchard.Environment.Features.FeatureManager.<>c__DisplayClass2d.<EnableFeature>b__20(String fId) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Environment\Features\FeatureManager.cs:line 148
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Orchard.Environment.Features.FeatureManager.<EnableFeature>b__1e(String currentFeatureId, IDictionary`2 featuresState) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Environment\Features\FeatureManager.cs:line 147
+   at Orchard.Environment.Features.FeatureManager.GetAffectedFeatures(String featureId, IDictionary`2 features, Func`3 getAffectedDependencies) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Environment\Features\FeatureManager.cs:line 195
+   at Orchard.Environment.Features.FeatureManager.EnableFeature(String featureId, IDictionary`2 availableFeatures, Boolean force) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Environment\Features\FeatureManager.cs:line 153
+   at Orchard.Environment.Features.FeatureManager.<>c__DisplayClass9.<EnableFeatures>b__4(String featureId) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Environment\Features\FeatureManager.cs:line 73
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Orchard.Environment.Features.FeatureManager.EnableFeatures(IEnumerable`1 featureIds, Boolean force) in c:\Users\sebros\My Projects\Orchard\src\Orchard\Environment\Features\FeatureManager.cs:line 72
+   at Orchard.Recipes.RecipeHandlers.FeatureRecipeHandler.ExecuteRecipeStep(RecipeContext recipeContext)
+   at Orchard.Recipes.Services.RecipeStepExecutor.ExecuteNextStep(String executionId)
+2012-04-19 17:13:57,292 [17] Orchard.Exceptions.DefaultExceptionPolicy - Exception has been thrown by the target of an invocation.
+2012-04-19 17:22:25,809 [40] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - NullReferenceException thrown from IContentPartDriver by BinaryAnalysis.MultiLanguage.Drivers.CultureBodyPartDriver
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BinaryAnalysis.MultiLanguage.Drivers.CultureBodyPartDriver.GetFallbackBodyText(BodyPart part)
+   at BinaryAnalysis.MultiLanguage.Drivers.CultureBodyPartDriver.<>c__DisplayClass5.<Display>b__3()
+ 
