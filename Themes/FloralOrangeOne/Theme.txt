@@ -1,0 +1,7 @@
+Name: Floral Orange One
+Author: continuum - rich media lab
+Website: http://www.continuum.tv
+Description: This abstract theme is a great eye-catcher with its beautiful colors and shapes.
+(Deutsch: Dieses abstrakte Theme ist mit seinen bildschönen Farben und Formen ein großartiger Blickfang.)
+Version: 1.0                    
+Tags: cms, modern, art, design, pattern, floral, flower, ornament, shapes, drip, splash, butterfly, orange

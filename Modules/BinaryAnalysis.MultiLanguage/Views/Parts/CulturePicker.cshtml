@@ -1,0 +1,26 @@
+﻿@using Orchard.Utility.Extensions
+@using System.Collections.Generic
+@using System.Globalization
+@{
+    var availableCultures = Model.AvailableCultures as List<string>;
+
+    var availableCultureswithNames = new List<KeyValuePair<string, string>>(availableCultures.Count);
+    foreach (var culture in availableCultures) {
+        try {
+            var cultureInfo = new CultureInfo(culture);
+            availableCultureswithNames.Add(new KeyValuePair<string, string>(culture, cultureInfo.TwoLetterISOLanguageName));
+        }
+        catch {
+            availableCultureswithNames.Add(new KeyValuePair<string, string>(culture, culture));
+        }
+    }
+    
+    
+}
+@foreach (var culture in availableCultureswithNames)
+{
+    var imageSrc = "/Modules/BinaryAnalysis.MultiLanguage/Styles/famfam/gif/" + culture.Value + ".gif";
+<a href="@Html.AntiForgeryTokenGetUrl(Url.Action("ChangeCulture", "Culture", new { CultureName=culture.Key, Area = "BinaryAnalysis.MultiLanguage" }))">
+<img src="@imageSrc" style="width:16px; height:11px" title="@culture.Key" alt="@culture.Key" />
+</a>
+}

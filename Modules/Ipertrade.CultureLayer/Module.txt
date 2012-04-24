@@ -1,0 +1,13 @@
+Name: Culture Layer
+AntiForgery: enabled
+Author: Ipertrade S.r.l. Team
+Website: http://www.ipertrade.com
+Version: 1.0
+OrchardVersion: 1.1
+Description: Define a layer that is visible only to users in the specified culture. For example, 'Lang "it-IT"' limits a layer to italian culture only.
+Features:
+    Ipertrade.CultureLayer:
+        Name: Culture Layer
+        Description: Define a layer that is visible only to users in the specified culture.
+        Dependencies: Orchard.Widgets, Orchard.Localization
+        Category: Layer rules

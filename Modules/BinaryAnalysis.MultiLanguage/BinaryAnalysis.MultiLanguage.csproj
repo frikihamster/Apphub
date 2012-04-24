@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED5E1EC9-4E47-456B-A880-CE207E3F4DC6}</ProjectGuid>
+    <ProjectTypeGuids>{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BinaryAnalysis.MultiLanguage</RootNamespace>
+    <AssemblyName>BinaryAnalysis.MultiLanguage</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\aspnetmvc\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\famfam\gif\ad.gif" />
+    <Content Include="Styles\famfam\gif\ae.gif" />
+    <Content Include="Styles\famfam\gif\af.gif" />
+    <Content Include="Styles\famfam\gif\ag.gif" />
+    <Content Include="Styles\famfam\gif\ai.gif" />
+    <Content Include="Styles\famfam\gif\al.gif" />
+    <Content Include="Styles\famfam\gif\am.gif" />
+    <Content Include="Styles\famfam\gif\an.gif" />
+    <Content Include="Styles\famfam\gif\ao.gif" />
+    <Content Include="Styles\famfam\gif\ar.gif" />
+    <Content Include="Styles\famfam\gif\as.gif" />
+    <Content Include="Styles\famfam\gif\at.gif" />
+    <Content Include="Styles\famfam\gif\au.gif" />
+    <Content Include="Styles\famfam\gif\aw.gif" />
+    <Content Include="Styles\famfam\gif\ax.gif" />
+    <Content Include="Styles\famfam\gif\az.gif" />
+    <Content Include="Styles\famfam\gif\ba.gif" />
+    <Content Include="Styles\famfam\gif\bb.gif" />
+    <Content Include="Styles\famfam\gif\bd.gif" />
+    <Content Include="Styles\famfam\gif\be.gif" />
+    <Content Include="Styles\famfam\gif\bf.gif" />
+    <Content Include="Styles\famfam\gif\bg.gif" />
+    <Content Include="Styles\famfam\gif\bh.gif" />
+    <Content Include="Styles\famfam\gif\bi.gif" />
+    <Content Include="Styles\famfam\gif\bj.gif" />
+    <Content Include="Styles\famfam\gif\bm.gif" />
+    <Content Include="Styles\famfam\gif\bn.gif" />
+    <Content Include="Styles\famfam\gif\bo.gif" />
+    <Content Include="Styles\famfam\gif\br.gif" />
+    <Content Include="Styles\famfam\gif\bs.gif" />
+    <Content Include="Styles\famfam\gif\bt.gif" />
+    <Content Include="Styles\famfam\gif\bv.gif" />
+    <Content Include="Styles\famfam\gif\bw.gif" />
+    <Content Include="Styles\famfam\gif\by.gif" />
+    <Content Include="Styles\famfam\gif\bz.gif" />
+    <Content Include="Styles\famfam\gif\ca.gif" />
+    <Content Include="Styles\famfam\gif\catalonia.gif" />
+    <Content Include="Styles\famfam\gif\cc.gif" />
+    <Content Include="Styles\famfam\gif\cd.gif" />
+    <Content Include="Styles\famfam\gif\cf.gif" />
+    <Content Include="Styles\famfam\gif\cg.gif" />
+    <Content Include="Styles\famfam\gif\ch.gif" />
+    <Content Include="Styles\famfam\gif\ci.gif" />
+    <Content Include="Styles\famfam\gif\ck.gif" />
+    <Content Include="Styles\famfam\gif\cl.gif" />
+    <Content Include="Styles\famfam\gif\cm.gif" />
+    <Content Include="Styles\famfam\gif\cn.gif" />
+    <Content Include="Styles\famfam\gif\co.gif" />
+    <Content Include="Styles\famfam\gif\cr.gif" />
+    <Content Include="Styles\famfam\gif\cs.gif" />
+    <Content Include="Styles\famfam\gif\cu.gif" />
+    <Content Include="Styles\famfam\gif\cv.gif" />
+    <Content Include="Styles\famfam\gif\cx.gif" />
+    <Content Include="Styles\famfam\gif\cy.gif" />
+    <Content Include="Styles\famfam\gif\cz.gif" />
+    <Content Include="Styles\famfam\gif\de.gif" />
+    <Content Include="Styles\famfam\gif\dj.gif" />
+    <Content Include="Styles\famfam\gif\dk.gif" />
+    <Content Include="Styles\famfam\gif\dm.gif" />
+    <Content Include="Styles\famfam\gif\do.gif" />
+    <Content Include="Styles\famfam\gif\dz.gif" />
+    <Content Include="Styles\famfam\gif\ec.gif" />
+    <Content Include="Styles\famfam\gif\ee.gif" />
+    <Content Include="Styles\famfam\gif\eg.gif" />
+    <Content Include="Styles\famfam\gif\eh.gif" />
+    <Content Include="Styles\famfam\gif\en.gif" />
+    <Content Include="Styles\famfam\gif\er.gif" />
+    <Content Include="Styles\famfam\gif\es.gif" />
+    <Content Include="Styles\famfam\gif\et.gif" />
+    <Content Include="Styles\famfam\gif\eu.gif" />
+    <Content Include="Styles\famfam\gif\fam.gif" />
+    <Content Include="Styles\famfam\gif\fi.gif" />
+    <Content Include="Styles\famfam\gif\fj.gif" />
+    <Content Include="Styles\famfam\gif\fk.gif" />
+    <Content Include="Styles\famfam\gif\fm.gif" />
+    <Content Include="Styles\famfam\gif\fo.gif" />
+    <Content Include="Styles\famfam\gif\fr.gif" />
+    <Content Include="Styles\famfam\gif\ga.gif" />
+    <Content Include="Styles\famfam\gif\gb.gif" />
+    <Content Include="Styles\famfam\gif\gd.gif" />
+    <Content Include="Styles\famfam\gif\ge.gif" />
+    <Content Include="Styles\famfam\gif\gf.gif" />
+    <Content Include="Styles\famfam\gif\gh.gif" />
+    <Content Include="Styles\famfam\gif\gi.gif" />
+    <Content Include="Styles\famfam\gif\gl.gif" />
+    <Content Include="Styles\famfam\gif\gm.gif" />
+    <Content Include="Styles\famfam\gif\gn.gif" />
+    <Content Include="Styles\famfam\gif\gp.gif" />
+    <Content Include="Styles\famfam\gif\gq.gif" />
+    <Content Include="Styles\famfam\gif\gr.gif" />
+    <Content Include="Styles\famfam\gif\gs.gif" />
+    <Content Include="Styles\famfam\gif\gt.gif" />
+    <Content Include="Styles\famfam\gif\gu.gif" />
+    <Content Include="Styles\famfam\gif\gw.gif" />
+    <Content Include="Styles\famfam\gif\gy.gif" />
+    <Content Include="Styles\famfam\gif\hk.gif" />
+    <Content Include="Styles\famfam\gif\hm.gif" />
+    <Content Include="Styles\famfam\gif\hn.gif" />
+    <Content Include="Styles\famfam\gif\hr.gif" />
+    <Content Include="Styles\famfam\gif\ht.gif" />
+    <Content Include="Styles\famfam\gif\hu.gif" />
+    <Content Include="Styles\famfam\gif\id.gif" />
+    <Content Include="Styles\famfam\gif\ie.gif" />
+    <Content Include="Styles\famfam\gif\il.gif" />
+    <Content Include="Styles\famfam\gif\in.gif" />
+    <Content Include="Styles\famfam\gif\io.gif" />
+    <Content Include="Styles\famfam\gif\iq.gif" />
+    <Content Include="Styles\famfam\gif\ir.gif" />
+    <Content Include="Styles\famfam\gif\is.gif" />
+    <Content Include="Styles\famfam\gif\it.gif" />
+    <Content Include="Styles\famfam\gif\jm.gif" />
+    <Content Include="Styles\famfam\gif\jo.gif" />
+    <Content Include="Styles\famfam\gif\jp.gif" />
+    <Content Include="Styles\famfam\gif\ke.gif" />
+    <Content Include="Styles\famfam\gif\kg.gif" />
+    <Content Include="Styles\famfam\gif\kh.gif" />
+    <Content Include="Styles\famfam\gif\ki.gif" />
+    <Content Include="Styles\famfam\gif\km.gif" />
+    <Content Include="Styles\famfam\gif\kn.gif" />
+    <Content Include="Styles\famfam\gif\kp.gif" />
+    <Content Include="Styles\famfam\gif\kr.gif" />
+    <Content Include="Styles\famfam\gif\kw.gif" />
+    <Content Include="Styles\famfam\gif\ky.gif" />
+    <Content Include="Styles\famfam\gif\kz.gif" />
+    <Content Include="Styles\famfam\gif\la.gif" />
+    <Content Include="Styles\famfam\gif\lb.gif" />
+    <Content Include="Styles\famfam\gif\lc.gif" />
+    <Content Include="Styles\famfam\gif\li.gif" />
+    <Content Include="Styles\famfam\gif\lk.gif" />
+    <Content Include="Styles\famfam\gif\lr.gif" />
+    <Content Include="Styles\famfam\gif\ls.gif" />
+    <Content Include="Styles\famfam\gif\lt.gif" />
+    <Content Include="Styles\famfam\gif\lu.gif" />
+    <Content Include="Styles\famfam\gif\lv.gif" />
+    <Content Include="Styles\famfam\gif\ly.gif" />
+    <Content Include="Styles\famfam\gif\ma.gif" />
+    <Content Include="Styles\famfam\gif\mc.gif" />
+    <Content Include="Styles\famfam\gif\md.gif" />
+    <Content Include="Styles\famfam\gif\me.gif" />
+    <Content Include="Styles\famfam\gif\mg.gif" />
+    <Content Include="Styles\famfam\gif\mh.gif" />
+    <Content Include="Styles\famfam\gif\mk.gif" />
+    <Content Include="Styles\famfam\gif\ml.gif" />
+    <Content Include="Styles\famfam\gif\mm.gif" />
+    <Content Include="Styles\famfam\gif\mn.gif" />
+    <Content Include="Styles\famfam\gif\mo.gif" />
+    <Content Include="Styles\famfam\gif\mp.gif" />
+    <Content Include="Styles\famfam\gif\mq.gif" />
+    <Content Include="Styles\famfam\gif\mr.gif" />
+    <Content Include="Styles\famfam\gif\ms.gif" />
+    <Content Include="Styles\famfam\gif\mt.gif" />
+    <Content Include="Styles\famfam\gif\mu.gif" />
+    <Content Include="Styles\famfam\gif\mv.gif" />
+    <Content Include="Styles\famfam\gif\mw.gif" />
+    <Content Include="Styles\famfam\gif\mx.gif" />
+    <Content Include="Styles\famfam\gif\my.gif" />
+    <Content Include="Styles\famfam\gif\mz.gif" />
+    <Content Include="Styles\famfam\gif\na.gif" />
+    <Content Include="Styles\famfam\gif\nc.gif" />
+    <Content Include="Styles\famfam\gif\ne.gif" />
+    <Content Include="Styles\famfam\gif\nf.gif" />
+    <Content Include="Styles\famfam\gif\ng.gif" />
+    <Content Include="Styles\famfam\gif\ni.gif" />
+    <Content Include="Styles\famfam\gif\nl.gif" />
+    <Content Include="Styles\famfam\gif\no.gif" />
+    <Content Include="Styles\famfam\gif\np.gif" />
+    <Content Include="Styles\famfam\gif\nr.gif" />
+    <Content Include="Styles\famfam\gif\nu.gif" />
+    <Content Include="Styles\famfam\gif\nz.gif" />
+    <Content Include="Styles\famfam\gif\om.gif" />
+    <Content Include="Styles\famfam\gif\pa.gif" />
+    <Content Include="Styles\famfam\gif\pe.gif" />
+    <Content Include="Styles\famfam\gif\pf.gif" />
+    <Content Include="Styles\famfam\gif\pg.gif" />
+    <Content Include="Styles\famfam\gif\ph.gif" />
+    <Content Include="Styles\famfam\gif\pk.gif" />
+    <Content Include="Styles\famfam\gif\pl.gif" />
+    <Content Include="Styles\famfam\gif\pm.gif" />
+    <Content Include="Styles\famfam\gif\pn.gif" />
+    <Content Include="Styles\famfam\gif\pr.gif" />
+    <Content Include="Styles\famfam\gif\ps.gif" />
+    <Content Include="Styles\famfam\gif\pt.gif" />
+    <Content Include="Styles\famfam\gif\pw.gif" />
+    <Content Include="Styles\famfam\gif\py.gif" />
+    <Content Include="Styles\famfam\gif\qa.gif" />
+    <Content Include="Styles\famfam\gif\re.gif" />
+    <Content Include="Styles\famfam\gif\ro.gif" />
+    <Content Include="Styles\famfam\gif\rs.gif" />
+    <Content Include="Styles\famfam\gif\ru.gif" />
+    <Content Include="Styles\famfam\gif\rw.gif" />
+    <Content Include="Styles\famfam\gif\sa.gif" />
+    <Content Include="Styles\famfam\gif\sb.gif" />
+    <Content Include="Styles\famfam\gif\sc.gif" />
+    <Content Include="Styles\famfam\gif\scotland.gif" />
+    <Content Include="Styles\famfam\gif\sd.gif" />
+    <Content Include="Styles\famfam\gif\se.gif" />
+    <Content Include="Styles\famfam\gif\sg.gif" />
+    <Content Include="Styles\famfam\gif\sh.gif" />
+    <Content Include="Styles\famfam\gif\si.gif" />
+    <Content Include="Styles\famfam\gif\sj.gif" />
+    <Content Include="Styles\famfam\gif\sk.gif" />
+    <Content Include="Styles\famfam\gif\sl.gif" />
+    <Content Include="Styles\famfam\gif\sm.gif" />
+    <Content Include="Styles\famfam\gif\sn.gif" />
+    <Content Include="Styles\famfam\gif\so.gif" />
+    <Content Include="Styles\famfam\gif\sr.gif" />
+    <Content Include="Styles\famfam\gif\st.gif" />
+    <Content Include="Styles\famfam\gif\sv.gif" />
+    <Content Include="Styles\famfam\gif\sy.gif" />
+    <Content Include="Styles\famfam\gif\sz.gif" />
+    <Content Include="Styles\famfam\gif\tc.gif" />
+    <Content Include="Styles\famfam\gif\td.gif" />
+    <Content Include="Styles\famfam\gif\tf.gif" />
+    <Content Include="Styles\famfam\gif\tg.gif" />
+    <Content Include="Styles\famfam\gif\th.gif" />
+    <Content Include="Styles\famfam\gif\tj.gif" />
+    <Content Include="Styles\famfam\gif\tk.gif" />
+    <Content Include="Styles\famfam\gif\tl.gif" />
+    <Content Include="Styles\famfam\gif\tm.gif" />
+    <Content Include="Styles\famfam\gif\tn.gif" />
+    <Content Include="Styles\famfam\gif\to.gif" />
+    <Content Include="Styles\famfam\gif\tr.gif" />
+    <Content Include="Styles\famfam\gif\tt.gif" />
+    <Content Include="Styles\famfam\gif\tv.gif" />
+    <Content Include="Styles\famfam\gif\tw.gif" />
+    <Content Include="Styles\famfam\gif\tz.gif" />
+    <Content Include="Styles\famfam\gif\ua.gif" />
+    <Content Include="Styles\famfam\gif\ug.gif" />
+    <Content Include="Styles\famfam\gif\um.gif" />
+    <Content Include="Styles\famfam\gif\us.gif" />
+    <Content Include="Styles\famfam\gif\uy.gif" />
+    <Content Include="Styles\famfam\gif\uz.gif" />
+    <Content Include="Styles\famfam\gif\va.gif" />
+    <Content Include="Styles\famfam\gif\vc.gif" />
+    <Content Include="Styles\famfam\gif\ve.gif" />
+    <Content Include="Styles\famfam\gif\vg.gif" />
+    <Content Include="Styles\famfam\gif\vi.gif" />
+    <Content Include="Styles\famfam\gif\vn.gif" />
+    <Content Include="Styles\famfam\gif\vu.gif" />
+    <Content Include="Styles\famfam\gif\wales.gif" />
+    <Content Include="Styles\famfam\gif\wf.gif" />
+    <Content Include="Styles\famfam\gif\ws.gif" />
+    <Content Include="Styles\famfam\gif\ye.gif" />
+    <Content Include="Styles\famfam\gif\yt.gif" />
+    <Content Include="Styles\famfam\gif\za.gif" />
+    <Content Include="Styles\famfam\gif\zm.gif" />
+    <Content Include="Styles\famfam\gif\zw.gif" />
+    <Content Include="Styles\famfam\png\ad.png" />
+    <Content Include="Styles\famfam\png\ae.png" />
+    <Content Include="Styles\famfam\png\af.png" />
+    <Content Include="Styles\famfam\png\ag.png" />
+    <Content Include="Styles\famfam\png\ai.png" />
+    <Content Include="Styles\famfam\png\al.png" />
+    <Content Include="Styles\famfam\png\am.png" />
+    <Content Include="Styles\famfam\png\an.png" />
+    <Content Include="Styles\famfam\png\ao.png" />
+    <Content Include="Styles\famfam\png\ar.png" />
+    <Content Include="Styles\famfam\png\as.png" />
+    <Content Include="Styles\famfam\png\at.png" />
+    <Content Include="Styles\famfam\png\au.png" />
+    <Content Include="Styles\famfam\png\aw.png" />
+    <Content Include="Styles\famfam\png\ax.png" />
+    <Content Include="Styles\famfam\png\az.png" />
+    <Content Include="Styles\famfam\png\ba.png" />
+    <Content Include="Styles\famfam\png\bb.png" />
+    <Content Include="Styles\famfam\png\bd.png" />
+    <Content Include="Styles\famfam\png\be.png" />
+    <Content Include="Styles\famfam\png\bf.png" />
+    <Content Include="Styles\famfam\png\bg.png" />
+    <Content Include="Styles\famfam\png\bh.png" />
+    <Content Include="Styles\famfam\png\bi.png" />
+    <Content Include="Styles\famfam\png\bj.png" />
+    <Content Include="Styles\famfam\png\bm.png" />
+    <Content Include="Styles\famfam\png\bn.png" />
+    <Content Include="Styles\famfam\png\bo.png" />
+    <Content Include="Styles\famfam\png\br.png" />
+    <Content Include="Styles\famfam\png\bs.png" />
+    <Content Include="Styles\famfam\png\bt.png" />
+    <Content Include="Styles\famfam\png\bv.png" />
+    <Content Include="Styles\famfam\png\bw.png" />
+    <Content Include="Styles\famfam\png\by.png" />
+    <Content Include="Styles\famfam\png\bz.png" />
+    <Content Include="Styles\famfam\png\ca.png" />
+    <Content Include="Styles\famfam\png\catalonia.png" />
+    <Content Include="Styles\famfam\png\cc.png" />
+    <Content Include="Styles\famfam\png\cd.png" />
+    <Content Include="Styles\famfam\png\cf.png" />
+    <Content Include="Styles\famfam\png\cg.png" />
+    <Content Include="Styles\famfam\png\ch.png" />
+    <Content Include="Styles\famfam\png\ci.png" />
+    <Content Include="Styles\famfam\png\ck.png" />
+    <Content Include="Styles\famfam\png\cl.png" />
+    <Content Include="Styles\famfam\png\cm.png" />
+    <Content Include="Styles\famfam\png\cn.png" />
+    <Content Include="Styles\famfam\png\co.png" />
+    <Content Include="Styles\famfam\png\cr.png" />
+    <Content Include="Styles\famfam\png\cs.png" />
+    <Content Include="Styles\famfam\png\cu.png" />
+    <Content Include="Styles\famfam\png\cv.png" />
+    <Content Include="Styles\famfam\png\cx.png" />
+    <Content Include="Styles\famfam\png\cy.png" />
+    <Content Include="Styles\famfam\png\cz.png" />
+    <Content Include="Styles\famfam\png\de.png" />
+    <Content Include="Styles\famfam\png\dj.png" />
+    <Content Include="Styles\famfam\png\dk.png" />
+    <Content Include="Styles\famfam\png\dm.png" />
+    <Content Include="Styles\famfam\png\do.png" />
+    <Content Include="Styles\famfam\png\dz.png" />
+    <Content Include="Styles\famfam\png\ec.png" />
+    <Content Include="Styles\famfam\png\ee.png" />
+    <Content Include="Styles\famfam\png\eg.png" />
+    <Content Include="Styles\famfam\png\eh.png" />
+    <Content Include="Styles\famfam\png\england.png" />
+    <Content Include="Styles\famfam\png\er.png" />
+    <Content Include="Styles\famfam\png\es.png" />
+    <Content Include="Styles\famfam\png\et.png" />
+    <Content Include="Styles\famfam\png\europeanunion.png" />
+    <Content Include="Styles\famfam\png\fam.png" />
+    <Content Include="Styles\famfam\png\fi.png" />
+    <Content Include="Styles\famfam\png\fj.png" />
+    <Content Include="Styles\famfam\png\fk.png" />
+    <Content Include="Styles\famfam\png\fm.png" />
+    <Content Include="Styles\famfam\png\fo.png" />
+    <Content Include="Styles\famfam\png\fr.png" />
+    <Content Include="Styles\famfam\png\ga.png" />
+    <Content Include="Styles\famfam\png\gb.png" />
+    <Content Include="Styles\famfam\png\gd.png" />
+    <Content Include="Styles\famfam\png\ge.png" />
+    <Content Include="Styles\famfam\png\gf.png" />
+    <Content Include="Styles\famfam\png\gh.png" />
+    <Content Include="Styles\famfam\png\gi.png" />
+    <Content Include="Styles\famfam\png\gl.png" />
+    <Content Include="Styles\famfam\png\gm.png" />
+    <Content Include="Styles\famfam\png\gn.png" />
+    <Content Include="Styles\famfam\png\gp.png" />
+    <Content Include="Styles\famfam\png\gq.png" />
+    <Content Include="Styles\famfam\png\gr.png" />
+    <Content Include="Styles\famfam\png\gs.png" />
+    <Content Include="Styles\famfam\png\gt.png" />
+    <Content Include="Styles\famfam\png\gu.png" />
+    <Content Include="Styles\famfam\png\gw.png" />
+    <Content Include="Styles\famfam\png\gy.png" />
+    <Content Include="Styles\famfam\png\hk.png" />
+    <Content Include="Styles\famfam\png\hm.png" />
+    <Content Include="Styles\famfam\png\hn.png" />
+    <Content Include="Styles\famfam\png\hr.png" />
+    <Content Include="Styles\famfam\png\ht.png" />
+    <Content Include="Styles\famfam\png\hu.png" />
+    <Content Include="Styles\famfam\png\id.png" />
+    <Content Include="Styles\famfam\png\ie.png" />
+    <Content Include="Styles\famfam\png\il.png" />
+    <Content Include="Styles\famfam\png\in.png" />
+    <Content Include="Styles\famfam\png\io.png" />
+    <Content Include="Styles\famfam\png\iq.png" />
+    <Content Include="Styles\famfam\png\ir.png" />
+    <Content Include="Styles\famfam\png\is.png" />
+    <Content Include="Styles\famfam\png\it.png" />
+    <Content Include="Styles\famfam\png\jm.png" />
+    <Content Include="Styles\famfam\png\jo.png" />
+    <Content Include="Styles\famfam\png\jp.png" />
+    <Content Include="Styles\famfam\png\ke.png" />
+    <Content Include="Styles\famfam\png\kg.png" />
+    <Content Include="Styles\famfam\png\kh.png" />
+    <Content Include="Styles\famfam\png\ki.png" />
+    <Content Include="Styles\famfam\png\km.png" />
+    <Content Include="Styles\famfam\png\kn.png" />
+    <Content Include="Styles\famfam\png\kp.png" />
+    <Content Include="Styles\famfam\png\kr.png" />
+    <Content Include="Styles\famfam\png\kw.png" />
+    <Content Include="Styles\famfam\png\ky.png" />
+    <Content Include="Styles\famfam\png\kz.png" />
+    <Content Include="Styles\famfam\png\la.png" />
+    <Content Include="Styles\famfam\png\lb.png" />
+    <Content Include="Styles\famfam\png\lc.png" />
+    <Content Include="Styles\famfam\png\li.png" />
+    <Content Include="Styles\famfam\png\lk.png" />
+    <Content Include="Styles\famfam\png\lr.png" />
+    <Content Include="Styles\famfam\png\ls.png" />
+    <Content Include="Styles\famfam\png\lt.png" />
+    <Content Include="Styles\famfam\png\lu.png" />
+    <Content Include="Styles\famfam\png\lv.png" />
+    <Content Include="Styles\famfam\png\ly.png" />
+    <Content Include="Styles\famfam\png\ma.png" />
+    <Content Include="Styles\famfam\png\mc.png" />
+    <Content Include="Styles\famfam\png\md.png" />
+    <Content Include="Styles\famfam\png\me.png" />
+    <Content Include="Styles\famfam\png\mg.png" />
+    <Content Include="Styles\famfam\png\mh.png" />
+    <Content Include="Styles\famfam\png\mk.png" />
+    <Content Include="Styles\famfam\png\ml.png" />
+    <Content Include="Styles\famfam\png\mm.png" />
+    <Content Include="Styles\famfam\png\mn.png" />
+    <Content Include="Styles\famfam\png\mo.png" />
+    <Content Include="Styles\famfam\png\mp.png" />
+    <Content Include="Styles\famfam\png\mq.png" />
+    <Content Include="Styles\famfam\png\mr.png" />
+    <Content Include="Styles\famfam\png\ms.png" />
+    <Content Include="Styles\famfam\png\mt.png" />
+    <Content Include="Styles\famfam\png\mu.png" />
+    <Content Include="Styles\famfam\png\mv.png" />
+    <Content Include="Styles\famfam\png\mw.png" />
+    <Content Include="Styles\famfam\png\mx.png" />
+    <Content Include="Styles\famfam\png\my.png" />
+    <Content Include="Styles\famfam\png\mz.png" />
+    <Content Include="Styles\famfam\png\na.png" />
+    <Content Include="Styles\famfam\png\nc.png" />
+    <Content Include="Styles\famfam\png\ne.png" />
+    <Content Include="Styles\famfam\png\nf.png" />
+    <Content Include="Styles\famfam\png\ng.png" />
+    <Content Include="Styles\famfam\png\ni.png" />
+    <Content Include="Styles\famfam\png\nl.png" />
+    <Content Include="Styles\famfam\png\no.png" />
+    <Content Include="Styles\famfam\png\np.png" />
+    <Content Include="Styles\famfam\png\nr.png" />
+    <Content Include="Styles\famfam\png\nu.png" />
+    <Content Include="Styles\famfam\png\nz.png" />
+    <Content Include="Styles\famfam\png\om.png" />
+    <Content Include="Styles\famfam\png\pa.png" />
+    <Content Include="Styles\famfam\png\pe.png" />
+    <Content Include="Styles\famfam\png\pf.png" />
+    <Content Include="Styles\famfam\png\pg.png" />
+    <Content Include="Styles\famfam\png\ph.png" />
+    <Content Include="Styles\famfam\png\pk.png" />
+    <Content Include="Styles\famfam\png\pl.png" />
+    <Content Include="Styles\famfam\png\pm.png" />
+    <Content Include="Styles\famfam\png\pn.png" />
+    <Content Include="Styles\famfam\png\pr.png" />
+    <Content Include="Styles\famfam\png\ps.png" />
+    <Content Include="Styles\famfam\png\pt.png" />
+    <Content Include="Styles\famfam\png\pw.png" />
+    <Content Include="Styles\famfam\png\py.png" />
+    <Content Include="Styles\famfam\png\qa.png" />
+    <Content Include="Styles\famfam\png\re.png" />
+    <Content Include="Styles\famfam\png\ro.png" />
+    <Content Include="Styles\famfam\png\rs.png" />
+    <Content Include="Styles\famfam\png\ru.png" />
+    <Content Include="Styles\famfam\png\rw.png" />
+    <Content Include="Styles\famfam\png\sa.png" />
+    <Content Include="Styles\famfam\png\sb.png" />
+    <Content Include="Styles\famfam\png\sc.png" />
+    <Content Include="Styles\famfam\png\scotland.png" />
+    <Content Include="Styles\famfam\png\sd.png" />
+    <Content Include="Styles\famfam\png\se.png" />
+    <Content Include="Styles\famfam\png\sg.png" />
+    <Content Include="Styles\famfam\png\sh.png" />
+    <Content Include="Styles\famfam\png\si.png" />
+    <Content Include="Styles\famfam\png\sj.png" />
+    <Content Include="Styles\famfam\png\sk.png" />
+    <Content Include="Styles\famfam\png\sl.png" />
+    <Content Include="Styles\famfam\png\sm.png" />
+    <Content Include="Styles\famfam\png\sn.png" />
+    <Content Include="Styles\famfam\png\so.png" />
+    <Content Include="Styles\famfam\png\sr.png" />
+    <Content Include="Styles\famfam\png\st.png" />
+    <Content Include="Styles\famfam\png\sv.png" />
+    <Content Include="Styles\famfam\png\sy.png" />
+    <Content Include="Styles\famfam\png\sz.png" />
+    <Content Include="Styles\famfam\png\tc.png" />
+    <Content Include="Styles\famfam\png\td.png" />
+    <Content Include="Styles\famfam\png\tf.png" />
+    <Content Include="Styles\famfam\png\tg.png" />
+    <Content Include="Styles\famfam\png\th.png" />
+    <Content Include="Styles\famfam\png\tj.png" />
+    <Content Include="Styles\famfam\png\tk.png" />
+    <Content Include="Styles\famfam\png\tl.png" />
+    <Content Include="Styles\famfam\png\tm.png" />
+    <Content Include="Styles\famfam\png\tn.png" />
+    <Content Include="Styles\famfam\png\to.png" />
+    <Content Include="Styles\famfam\png\tr.png" />
+    <Content Include="Styles\famfam\png\tt.png" />
+    <Content Include="Styles\famfam\png\tv.png" />
+    <Content Include="Styles\famfam\png\tw.png" />
+    <Content Include="Styles\famfam\png\tz.png" />
+    <Content Include="Styles\famfam\png\ua.png" />
+    <Content Include="Styles\famfam\png\ug.png" />
+    <Content Include="Styles\famfam\png\um.png" />
+    <Content Include="Styles\famfam\png\us.png" />
+    <Content Include="Styles\famfam\png\uy.png" />
+    <Content Include="Styles\famfam\png\uz.png" />
+    <Content Include="Styles\famfam\png\va.png" />
+    <Content Include="Styles\famfam\png\vc.png" />
+    <Content Include="Styles\famfam\png\ve.png" />
+    <Content Include="Styles\famfam\png\vg.png" />
+    <Content Include="Styles\famfam\png\vi.png" />
+    <Content Include="Styles\famfam\png\vn.png" />
+    <Content Include="Styles\famfam\png\vu.png" />
+    <Content Include="Styles\famfam\png\wales.png" />
+    <Content Include="Styles\famfam\png\wf.png" />
+    <Content Include="Styles\famfam\png\ws.png" />
+    <Content Include="Styles\famfam\png\ye.png" />
+    <Content Include="Styles\famfam\png\yt.png" />
+    <Content Include="Styles\famfam\png\za.png" />
+    <Content Include="Styles\famfam\png\zm.png" />
+    <Content Include="Styles\famfam\png\zw.png" />
+    <Content Include="Styles\famfam\readme.txt" />
+    <Content Include="Web.config" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Scripts\Web.config" />
+    <Content Include="Styles\Web.config" />
+    <Content Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Module.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
+      <Project>{2D1D92BB-4555-4CBE-8D0E-63563D6CE4C6}</Project>
+      <Name>Orchard.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\Orchard.Core.csproj">
+      <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
+      <Name>Orchard.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orchard.Alias\Orchard.Alias.csproj">
+      <Project>{475B6C45-B27C-438B-8966-908B9D6D1077}</Project>
+      <Name>Orchard.Alias</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orchard.Autoroute\Orchard.Autoroute.csproj">
+      <Project>{66FCCD76-2761-47E3-8D11-B45D0001DDAA}</Project>
+      <Name>Orchard.Autoroute</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orchard.Localization\Orchard.Localization.csproj">
+      <Project>{FBC8B571-ED50-49D8-8D9D-64AB7454A0D6}</Project>
+      <Name>Orchard.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orchard.Widgets\Orchard.Widgets.csproj">
+      <Project>{194D3CCC-1153-474D-8176-FDE8D7D0D0BD}</Project>
+      <Name>Orchard.Widgets</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMenu.cs" />
+    <Compile Include="Controllers\AdminCultureController.cs" />
+    <Compile Include="Controllers\CultureController.cs" />
+    <Compile Include="PickerRoutes.cs" />
+    <Compile Include="Drivers\CultureBodyPartDriver.cs" />
+    <Compile Include="Drivers\CulturePickerPartDriver.cs" />
+    <Compile Include="Migrations.cs" />
+    <Compile Include="Models\CulturePickerPart.cs" />
+    <Compile Include="HomeRoutes.cs" />
+    <Compile Include="Services\CookieCultureSelector.cs" />
+    <Compile Include="Services\CultureRuleProvider.cs" />
+    <Compile Include="Services\LocalizableMainMenuNavigationProvider.cs" />
+    <Compile Include="ViewModels\AdminIndex.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Styles\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\AdminCulture\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="Placement.info" />
+    <None Include="Styles\famfam\gif\.DS_Store" />
+    <None Include="Styles\famfam\png\.DS_Store" />
+    <None Include="Views\Parts\famafam-CulturePicker.cshtml" />
+    <None Include="Views\Parts\dropdown-CulturePicker.cshtml" />
+    <None Include="Views\Parts\CulturePicker.cshtml" />
+    <Content Include="Views\Parts\sample-Localization.ContentTranslations.cshtml" />
+    <Content Include="Views\Parts\sample-Localization.ContentTranslations.Summary.cshtml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" DependsOnTargets="AfterBuildCompiler">
+    <PropertyGroup>
+      <AreasManifestDir>$(ProjectDir)\..\Manifests</AreasManifestDir>
+    </PropertyGroup>
+    <!-- If this is an area child project, uncomment the following line:
+    <CreateAreaManifest AreaName="$(AssemblyName)" AreaType="Child" AreaPath="$(ProjectDir)" ManifestPath="$(AreasManifestDir)" ContentFiles="@(Content)" />
+    -->
+    <!-- If this is an area parent project, uncomment the following lines:
+    <CreateAreaManifest AreaName="$(AssemblyName)" AreaType="Parent" AreaPath="$(ProjectDir)" ManifestPath="$(AreasManifestDir)" ContentFiles="@(Content)" />
+    <CopyAreaManifests ManifestPath="$(AreasManifestDir)" CrossCopy="false" RenameViews="true" />
+    -->
+  </Target>
+  <Target Name="AfterBuildCompiler" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)\..\$(ProjectName)" />
+  </Target>
+  <ProjectExtensions />
+</Project>

@@ -1,0 +1,35 @@
+Name: Multi Language
+AntiForgery: enabled
+Author: Ikutsin
+Website: http://usanov.net
+Version: 0.2
+OrchardVersion: 1.4
+Description: Description for the module
+Dependencies: Orchard.Localization,Orchard.Autoroute
+Category: Multi Language
+Features:
+	BinaryAnalysis.CultureMenuFilter:
+		Name: Culture: Menu filter
+		Description: Menu filter.
+		Dependencies: BinaryAnalysis.MultiLanguage
+		Category: Multi Language
+	BinaryAnalysis.CulturePicker:
+		Name: Culture: Language Picker Widget
+		Description: Language selection widget.
+		Dependencies: BinaryAnalysis.MultiLanguage,Orchard.Widgets
+		Category: Multi Language
+	BinaryAnalysis.LocalizedHome:
+		Name: Culture: Localized Home
+		Description: Language specific Homepage.
+		Dependencies: BinaryAnalysis.MultiLanguage
+		Category: Multi Language
+	BinaryAnalysis.CultureFallback:
+		Name: Culture: Fallback
+		Description: Fallback to default language if body part is empty
+		Dependencies: BinaryAnalysis.MultiLanguage
+		Category: Multi Language
+	BinaryAnalysis.CultureLayerRule:
+		Name: Culture: Layer Rule
+		Description: Add "culture" function for layer, usage: culture("ru-RU")
+		Dependencies: BinaryAnalysis.MultiLanguage,Orchard.Widgets
+		Category: Multi Language
